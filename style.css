@@ -1,0 +1,113 @@
+body{
+font-family:'Segoe UI';
+margin:0;
+background:linear-gradient(135deg,#1d2671,#c33764);
+color:white;
+text-align:center;
+}
+
+h1{
+margin-top:25px;
+font-size:38px;
+}
+
+.container{
+display:grid;
+grid-template-columns:repeat(4,220px);
+justify-content:center;
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+color:black;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.08);
+}
+
+.icon{
+font-size:35px;
+margin-bottom:10px;
+}
+
+.card p{
+font-size:28px;
+font-weight:bold;
+}
+
+.heart{border-top:6px solid #ff4d4d;}
+.bp{border-top:6px solid #4da6ff;}
+.oxygen{border-top:6px solid #33cc99;}
+.temp{border-top:6px solid #ff9933;}
+
+button{
+margin-top:40px;
+padding:14px 30px;
+font-size:18px;
+border:none;
+border-radius:25px;
+background:linear-gradient(90deg,#ff7e5f,#feb47b);
+color:white;
+cursor:pointer;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.chart-box{
+width:700px;
+margin:40px auto;
+background:white;
+padding:20px;
+border-radius:10px;
+}
+
+.chart-title{
+margin-top:40px;
+}
+
+.footer{
+margin-top:40px;
+margin-bottom:20px;
+font-size:14px;
+opacity:0.8;
+}
+.topbar{
+position:absolute;
+top:20px;
+right:40px;
+}
+
+.login{
+background:#00c9a7;
+padding:10px 20px;
+border:none;
+border-radius:20px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+
+.ecg{
+width:300px;
+height:60px;
+margin:20px auto;
+overflow:hidden;
+}
+
+.line{
+width:200%;
+height:4px;
+background:lime;
+animation:beat 2s linear infinite;
+}
+
+@keyframes beat{
+0%{transform:translateX(-100%);}
+100%{transform:translateX(0);}
+}

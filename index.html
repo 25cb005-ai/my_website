@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Remote Health Monitoring</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Chart library -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<h1>🏥 Remote Health Monitoring Dashboard</h1>
+
+<div class="container">
+
+<div class="card heart">
+<i class="fa-solid fa-heart-pulse icon"></i>
+<h2>Heart Rate</h2>
+<p id="heart">-- bpm</p>
+</div>
+
+<div class="card bp">
+<i class="fa-solid fa-stethoscope icon"></i>
+<h2>Blood Pressure</h2>
+<p id="bp">-- / --</p>
+</div>
+
+<div class="card oxygen">
+<i class="fa-solid fa-lungs icon"></i>
+<h2>Oxygen Level</h2>
+<p id="oxygen">-- %</p>
+</div>
+
+<div class="card temp">
+<i class="fa-solid fa-thermometer icon"></i>
+<h2>Body Temperature</h2>
+<p id="temp">-- °C</p>
+</div>
+
+</div>
+
+<button onclick="generateData()">Get Patient Data</button>
+
+<h2 class="chart-title">Live Health Chart</h2>
+
+<div class="chart-box">
+<canvas id="healthChart"></canvas>
+</div>
+
+<div class="footer">
+Remote Patient Monitoring System | Healthcare Dashboard
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
